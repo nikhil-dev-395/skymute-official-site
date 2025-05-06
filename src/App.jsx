@@ -3,18 +3,25 @@ import Navbar from "./components/navbar/Navbar";
 import { theme } from "./utils/colors";
 import Card from "./components/card/Card";
 import Homepage from "./pages/home/Homepage";
+import Footer from "./components/footer/Footer";
+import { Aboutpage } from "./pages/about/Aboutpage";
 
 const App = () => {
   const bgColor = {
     backgroundColor: theme?.colors?.primary,
   };
   return (
-    <div className={` w-full h-screen`} style={bgColor}>
+    <div className={` w-full h-full`} style={bgColor}>
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
         </Routes>
+
+        <Routes>
+          <Route path="/about" element={<Aboutpage />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

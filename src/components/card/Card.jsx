@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { theme } from "../../utils/colors";
 import CircularImagesLayout from "../circular/CircularImagesLayout";
+import Android from "../button/Android";
 
 const Card = ({ title, topic, explanation }) => {
   const bgColor = {
@@ -12,12 +13,9 @@ const Card = ({ title, topic, explanation }) => {
     color: topicColor,
   };
   return (
-    <>
+    <section className="mx-auto max-w-[1100px] ">
       {/* title ,  images - default , topic , explanation */}
-      <div
-        className="md:w-[380px] md:h-[500px] bg-white mx-auto mt-4 rounded-[100px] py-8 px-4"
-        style={bgColor}
-      >
+      <div className="md:w-[380px] md:h-[550px] bg-white mx-auto  rounded-[60px] py-8 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700">
         <h3
           className={`text-xl font-[700] text-white mx-auto text-center w-[65%]`}
         >
@@ -27,7 +25,10 @@ const Card = ({ title, topic, explanation }) => {
         <div className="mx-auto">
           <CircularImagesLayout />
         </div>
-        <h4 style={topicStyle} className="text-xl font-bold text-center">
+        <h4
+          style={topicStyle}
+          className="text-[26px] font-bold text-center py-2"
+        >
           {" "}
           {topic}
         </h4>
@@ -36,7 +37,8 @@ const Card = ({ title, topic, explanation }) => {
           {explanation}
         </p>
       </div>
-    </>
+      <Android />
+    </section>
   );
 };
 
