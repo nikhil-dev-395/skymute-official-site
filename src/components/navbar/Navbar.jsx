@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { theme } from "../../utils/colors";
 // const icon = "../../assets/icons.svg";
+import { AiOutlineMenu } from "react-icons/ai";
+import { RxCross1 } from "react-icons/rx";
+
 const Navbar = () => {
   const headerStyle = {
     backgroundColor: theme?.colors?.primary,
@@ -9,6 +12,12 @@ const Navbar = () => {
 
   const navTextStyle = {
     color: theme?.colors?.secondary,
+  };
+
+  const [toggleMenu, setToggleMenu] = useState(true);
+
+  const toggle = () => {
+    setToggleMenu(!toggleMenu);
   };
 
   return (
@@ -24,8 +33,14 @@ const Navbar = () => {
           <img src="/images/icon.svg" width={45} alt="icon" />
           <span>skymute</span>
         </Link>
+
+        <button onClick={toggle} className="md:hidden">
+          {" "}
+          {toggleMenu ? <AiOutlineMenu /> : <RxCross1 />}
+        </button>
+
         {
-          <ul className="flex items-center gap-20">
+          <ul className=" md:items-center md:gap-20 md:flex hidden">
             <li>
               <Link to="/about">about</Link>
             </li>

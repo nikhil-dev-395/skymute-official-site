@@ -13,16 +13,16 @@ const Card = ({ title, topic, explanation }) => {
     color: topicColor,
   };
   return (
-    <section className="mx-auto max-w-[1100px] ">
+    <section className="mx-auto max-w-[1100px] px-1">
       {/* title ,  images - default , topic , explanation */}
-      <div className="md:w-[380px] md:h-[550px] bg-white mx-auto  rounded-[60px] py-8 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700">
+      <div className="sm:max-w-[380px]  max-w-[340px] md:h-[550px] sm:h-[400px] bg-white mx-auto  rounded-[60px] md:py-8 py-5 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700">
         <h3
-          className={`text-xl font-[700] text-white mx-auto text-center w-[65%]`}
+          className={`md:text-xl sm:text-[17px] font-[700] text-white mx-auto text-center w-[65%]`}
         >
           {title}
         </h3>
         {/* images */}
-        <div className="mx-auto">
+        <div className="mx-auto ">
           <CircularImagesLayout />
         </div>
         <h4
@@ -32,7 +32,7 @@ const Card = ({ title, topic, explanation }) => {
           {" "}
           {topic}
         </h4>
-        <p className="text-center font-[700] w-[90%] mx-auto text-[20px] text-white px-3">
+        <p className="text-center font-[700] w-[90%] mx-auto sm:text-[20px] text-[16px] text-white sm:px-3">
           {" "}
           {explanation}
         </p>

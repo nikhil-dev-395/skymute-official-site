@@ -15,7 +15,7 @@ const CircularImagesLayout = () => {
   };
 
   return (
-    <div className="relative w-full h-64 mx-auto ">
+    <div className="relative  w-full  h-64 mx-auto ">
       {/* Top  image */}
       <div className="absolute top-2 left-1/2 transform -translate-x-1/2">
         <img
@@ -52,7 +52,7 @@ const CircularImagesLayout = () => {
       </div>
 
       {/* left bottom */}
-      <div className="absolute left-22 bottom-14 transform -translate-x-1/2">
+      <div className="absolute sm:left-20 left-[70px] bottom-14 transform -translate-x-1/2">
         <img
           src={images?.tiktok}
           alt="right"
@@ -61,7 +61,7 @@ const CircularImagesLayout = () => {
       </div>
 
       {/*  bottom */}
-      <div className="absolute right-28 bottom-3 transform -translate-x-1/2">
+      <div className="absolute right-[88px] md:right-24 bottom-3 transform -translate-x-1/2">
         <img
           src={images?.pinterest}
           alt="right"
