@@ -22,11 +22,11 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full max-h-20 border-b border-white py-5"
+      className="w-full max-h-20 border-b border-white py-5 "
       style={headerStyle}
     >
       <nav
-        className="w-full max-w-[1100px] mx-auto flex justify-between  text-2xl font-semibold capitalize"
+        className="w-full max-w-[1100px] mx-auto flex justify-between  text-2xl font-semibold capitalize px-5 "
         style={navTextStyle}
       >
         <Link to={"/"} className="flex items-center gap-2">
@@ -41,18 +41,37 @@ const Navbar = () => {
 
         {
           <ul className=" md:items-center md:gap-20 md:flex hidden">
-            <li>
+            <li className="hover:text-blue-600">
               <Link to="/about">about</Link>
             </li>
-            <li>
+            <li className="hover:text-blue-600">
               <Link to="/privacy-policy">Privacy policy</Link>
             </li>
-            <li>
+            <li className="hover:text-blue-600">
               <Link to="/terms-and-condition">T&Cs</Link>
             </li>
           </ul>
         }
+
+        {/* small devices navbar */}
       </nav>
+      <>
+        {!toggleMenu ? (
+          <ul className="bg-slate-900  flex flex-col absolute top-16 border-b text-white border-white  w-full h-[140px] pl-6 py-4 mb-2 gap-3.5 text-xl">
+            <li className="hover:text-blue-600">
+              <Link to="/about">about</Link>
+            </li>
+            <li className="hover:text-blue-600">
+              <Link to="/privacy-policy">Privacy policy</Link>
+            </li>
+            <li className="hover:text-blue-600">
+              <Link to="/terms-and-condition">T&Cs</Link>
+            </li>
+          </ul>
+        ) : (
+          ""
+        )}
+      </>
     </header>
   );
 };

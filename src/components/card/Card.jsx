@@ -2,24 +2,25 @@ import React, { useState } from "react";
 import { theme } from "../../utils/colors";
 import CircularImagesLayout from "../circular/CircularImagesLayout";
 import Android from "../button/Android";
+import Slider from "../button/Slider";
 
 const Card = ({ title, topic, explanation }) => {
-  const bgColor = {
-    background: theme?.colors?.ternary,
-  };
   const [topicColor, settopicColor] = useState("#db3b56");
 
   const topicStyle = {
     color: topicColor,
   };
+
   return (
     <section className="mx-auto max-w-[1100px] px-1">
       {/* title ,  images - default , topic , explanation */}
-      <div className="sm:max-w-[380px]  max-w-[340px] md:h-[550px] sm:h-[400px] bg-white mx-auto  rounded-[60px] md:py-8 py-5 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700">
+      <div className="sm:max-w-[380px]  max-w-[340px] max-h-[590px] md:h-[580px] sm:h-[400px] bg-white mx-auto  rounded-[60px] md:py-4 py-3 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700 ">
+        <Android />
         <h3
-          className={`md:text-xl sm:text-[17px] font-[700] text-white mx-auto text-center w-[65%]`}
+          className={`md:text-xl sm:text-[17px] font-[700] text-white mx-auto text-center max-w-[320px] `}
         >
-          {title}
+          {" "}
+          {title}{" "}
         </h3>
         {/* images */}
         <div className="mx-auto ">
@@ -37,7 +38,6 @@ const Card = ({ title, topic, explanation }) => {
           {explanation}
         </p>
       </div>
-      <Android />
     </section>
   );
 };
