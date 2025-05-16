@@ -1,10 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { CONSTANTS } from "../../utils/canstants";
+ import { CONSTANTS } from "../../utils/canstants";
 
 const Android = () => {
   return (
-    <div className="py-4 md:py-5 mb-2 sm:px-4 bg-indigo-300/20 text-white font-semibold text-center rounded-4xl mx-auto  md:w-[280px]  w-[240px]">
+    <div className="py-4 md:py-5 mb-2 sm:px-4 bg-blue-400/50 text-white font-semibold text-center rounded-4xl mx-auto  md:w-[280px]  w-[240px]">
       <a
         href={CONSTANTS?.links?.app_link}
         className="flex items-center justify-center text-sm sm:text-xl gap-3 sm:gap-4"

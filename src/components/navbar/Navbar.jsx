@@ -57,7 +57,7 @@ const Navbar = () => {
       </nav>
       <>
         {!toggleMenu ? (
-          <ul className="bg-slate-900  flex flex-col absolute top-16 border-b text-white border-white  w-full h-[140px] pl-6 py-4 mb-2 gap-3.5 text-xl">
+          <ul className="bg-slate-900  flex flex-col absolute top-20 border-b text-white border-white  w-full h-[140px] pl-6 py-4 mb-2 gap-3.5 text-xl">
             <li className="hover:text-blue-600">
               <Link to="/about">about</Link>
             </li>

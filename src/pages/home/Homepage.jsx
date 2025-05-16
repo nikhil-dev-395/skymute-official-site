@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Card from "../../components/card/Card";
 import ToggleButton from "../../components/button/Slider";
+import Android from "../../components/button/Android";
 
 const Homepage = () => {
   const [problem, setProblem] = useState(true);
   return (
-    <div className="w-full h-full py-3">
+    <div className="w-full h-full min-h-screen py-5">
+      <Android />
       {problem ? (
         <Card
           title={"Tried promoting your links across platforms?"}
@@ -13,6 +15,7 @@ const Homepage = () => {
           explanation={
             "If you try to share your link, they ban you like you hacked their server with a toaster!"
           }
+          doesLayoutExist={true}
         />
       ) : (
         <Card
@@ -21,10 +24,11 @@ const Homepage = () => {
           explanation={
             "With SkyMute Linkbox, you can easily promote all your links across platforms without the risk of getting banned"
           }
+          doesLayoutExist={false}
         />
       )}
 
-      <div className="sm:w-[360px] w-[310px]  text-2xl font-extrabold text-white rounded-[50px] bg-linear-to-r from-[#29314A] to-[#6375B0] cursor-pointer flex justify-between mx-auto mt-10">
+      <div className="sm:w-[360px] w-[310px]  text-2xl font-extrabold text-white rounded-[50px] bg-linear-to-r from-[#29314A] to-[#6375B0] cursor-pointer flex justify-between mx-auto mt-4">
         <button
           onClick={() => setProblem(true)}
           className={` w-[70%] py-5 cursor-pointer  ${

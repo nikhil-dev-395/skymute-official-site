@@ -5,6 +5,7 @@ import Card from "./components/card/Card";
 import Homepage from "./pages/home/Homepage";
 import Footer from "./components/footer/Footer";
 import { Aboutpage } from "./pages/about/Aboutpage";
+import PolicyPrivacy from "./pages/policy/PolicyPrivacy";
 
 const App = () => {
   const bgColor = {
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/privacy-policy" element={<PolicyPrivacy />} />
         </Routes>
 
         <Routes>
