@@ -24,11 +24,13 @@ const Homepage = () => {
         />
       )}
 
-      <div className="w-[360px]  text-2xl font-extrabold border-red-50 border rounded-[50px] bg-red-100 cursor-pointer flex justify-between mx-auto mt-10">
+      <div className="sm:w-[360px] w-[310px]  text-2xl font-extrabold text-white rounded-[50px] bg-linear-to-r from-[#29314A] to-[#6375B0] cursor-pointer flex justify-between mx-auto mt-10">
         <button
           onClick={() => setProblem(true)}
           className={` w-[70%] py-5 cursor-pointer  ${
-            problem ? `bg-red-400` : `bg-transparent`
+            problem
+              ? `bg-linear-to-r from-[#6B1B42] to-[#E23CD1]`
+              : `bg-transparent`
           } rounded-r-[50px] rounded-l-[50px]`}
         >
           problem
@@ -36,7 +38,9 @@ const Homepage = () => {
         <button
           onClick={() => setProblem(false)}
           className={` w-[70%] py-5 cursor-pointer ${
-            !problem ? `bg-green-400` : `bg-transparent`
+            !problem
+              ? `bg-linear-to-r from-[#185912] to-[#3CE29A]`
+              : `bg-transparent`
           } rounded-r-[50px] rounded-l-[50px] `}
         >
           solution

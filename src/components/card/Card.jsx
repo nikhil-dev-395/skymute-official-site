@@ -12,7 +12,7 @@ const Card = ({ title, topic, explanation }) => {
   };
 
   return (
-    <section className="mx-auto max-w-[1100px] px-1">
+    <section className="mx-auto max-w-[1100px] ">
       {/* title ,  images - default , topic , explanation */}
       <div className="sm:max-w-[380px]  max-w-[340px] max-h-[590px] md:h-[580px] sm:h-[400px] bg-white mx-auto  rounded-[60px] md:py-4 py-3 px-4 bg-linear-to-b from-[#1a2959] to-[#10192d] border border-slate-700 ">
         <Android />
