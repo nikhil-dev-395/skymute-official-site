@@ -1,0 +1,57 @@
+[
+    {
+        "index": 1,
+        "id": "informationWeCollect",
+        "idText": "information we collect"
+    },
+    {
+        "index": 2,
+        "id": "HowWeUseYourInformation",
+        "idText": "How We Use Your Information"
+    },
+    {
+        "index": 3,
+        "id": "PublicContentAndSharing",
+        "idText": "Public Content and Sharing"
+    },
+    {
+        "index": 4,
+        "id": "ContentGuidelinesAndModeration",
+        "idText": "Content Guidelines and Moderation"
+    },
+    {
+        "index": 5,
+        "id": "DataSecurity",
+        "idText": "Data Security"
+    },
+    {
+        "index": 6,
+        "id": "ThirdPartyServices",
+        "idText": "Third-Party Services"
+    },
+    {
+        "index": 7,
+        "id": "YourRightsAndChoices",
+        "idText": "Your Rights and Choices"
+    },
+    {
+        "index": 8,
+        "id": "ChildrenPrivacy",
+        "idText": "Children’s Privacy"
+    },
+    {
+        "index": 9,
+        "id": "InternationalUsers",
+        "idText": "International Users"
+    },
+    {
+        "index": 10,
+        "id": "PolicyUpdates",
+        "idText": "Policy Updates"
+    },
+    {
+        "index": 11,
+        "id": "ContactUs",
+        "idText": "Contact Us"
+    }
+]

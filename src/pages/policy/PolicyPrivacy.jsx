@@ -1,3 +1,5 @@
+import ids from "../../json/idsPolicy.json";
+import PrivacyPolicy from "./V2";
 const PolicyPrivacy = () => {
   return (
     <section className="min-h-screen h-full  max-w-[1100px] mx-auto pt-5 text-white px-7">
@@ -8,39 +10,35 @@ const PolicyPrivacy = () => {
         {/* all contents */}
         <div className="">
           <h4 className="text-xl font-sans font-bold text-white pt-4">
-            Last updated <span className="font-thin">16 may 2025</span>{" "}
+            Last updated <span className="font-thin">10 april 2025</span>{" "}
           </h4>
-
           <div className="pt-10 flex flex-col gap-4 text-blue-50 text-[17px]">
             <span className="">
-              At skymute, we’re committed to transparency about how we collect,
-              use, and protect your personal information. This Privacy Notice
-              explains our practices and outlines your rights regarding your
-              information.
-            </span>
-
-            <span>
-              We recommend that you read this Privacy Notice in full to ensure
-              you are fully informed. However, if you only want to access a
-              particular section of this Privacy Notice, then you can click on
-              the relevant link below to jump to that section.
+              SkyMute ("we," "us," or "our") respects your privacy and is
+              committed to protecting it through this Privacy Policy. This
+              document explains how we collect, use, share, and protect your
+              personal information when you use our mobile application
+              ("SkyMute" or "App").
             </span>
           </div>
-
           {/* links */}
-
           <div className="py-4">
-            <ul className="list-outside">
-              <li className="">
-                <a href="#whatskymutedo" className="underline text-indigo-200">
-                  what does skymute do ?
-                </a>
-              </li>
+            <ul className="gap-4 flex flex-col">
+              {ids.map((id) => {
+                return (
+                  <li className="">
+                    <span className="pr-4">{id.index}.</span>
+                    <a href={`#${id.id}`} className="underline text-indigo-200">
+                      {id.idText}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-
           {/* all texts */}
-          <div className=""></div>
+          <PrivacyPolicy/>
+        
         </div>
       </div>
     </section>
