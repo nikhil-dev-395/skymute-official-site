@@ -48,7 +48,7 @@ const Navbar = () => {
               <Link to="/privacy-policy">Privacy policy</Link>
             </li>
             <li className="hover:text-blue-600">
-              <Link to="/terms-and-condition">T&Cs</Link>
+              <Link to="/terms">T&Cs</Link>
             </li>
           </ul>
         }
@@ -65,7 +65,7 @@ const Navbar = () => {
               <Link to="/privacy-policy">Privacy policy</Link>
             </li>
             <li className="hover:text-blue-600">
-              <Link to="/terms-and-condition">T&Cs</Link>
+              <Link to="/terms">T&Cs</Link>
             </li>
           </ul>
         ) : (

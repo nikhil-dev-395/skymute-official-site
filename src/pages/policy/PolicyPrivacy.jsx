@@ -5,7 +5,7 @@ const PolicyPrivacy = () => {
     <section className="min-h-screen h-full  max-w-[1100px] mx-auto pt-5 text-white px-7">
       <div className="">
         <h2 className="md:text-[80px] text-[60px] font-extrabold text-white capitalize">
-          privacy & policy
+          privacy policy
         </h2>
         {/* all contents */}
         <div className="">
@@ -26,7 +26,7 @@ const PolicyPrivacy = () => {
             <ul className="gap-4 flex flex-col">
               {ids.map((id) => {
                 return (
-                  <li className="">
+                  <li className="" key={id.index}>
                     <span className="pr-4">{id.index}.</span>
                     <a href={`#${id.id}`} className="underline text-indigo-200">
                       {id.idText}
@@ -37,8 +37,7 @@ const PolicyPrivacy = () => {
             </ul>
           </div>
           {/* all texts */}
-          <PrivacyPolicy/>
-        
+          <PrivacyPolicy />
         </div>
       </div>
     </section>

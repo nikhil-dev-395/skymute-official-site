@@ -4,8 +4,9 @@ import { theme } from "./utils/colors";
 import Card from "./components/card/Card";
 import Homepage from "./pages/home/Homepage";
 import Footer from "./components/footer/Footer";
-import { Aboutpage } from "./pages/about/Aboutpage";
+import About from "./pages/about/About.jsx";
 import PolicyPrivacy from "./pages/policy/PolicyPrivacy";
+import TermsConditions from "./pages/terms/TermsConditions.jsx";
 
 const App = () => {
   const bgColor = {
@@ -18,10 +19,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/privacy-policy" element={<PolicyPrivacy />} />
-        </Routes>
-
-        <Routes>
-          <Route path="/about" element={<Aboutpage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/terms" element={<TermsConditions />} />
         </Routes>
         <Footer />
       </BrowserRouter>

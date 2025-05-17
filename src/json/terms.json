@@ -1,0 +1,138 @@
+{
+    "terms_and_conditions": {
+        "effective_date": "4 april 2025",
+        "introduction": "These Terms and Conditions (“Terms”) govern your access to and use of the SkyMute platform, specifically the Link Box feature (the “Services”). By using or accessing any part of SkyMute, you agree to comply with these Terms. If you do not agree, please do not use or access the Services.",
+        "sections": [
+            {
+                "title": "Eligibility",
+                "content": [
+                    "You must be at least 13 years old (or the minimum legal age in your jurisdiction) to use SkyMute.",
+                    "By registering for an account or using the Services, you represent and warrant that you meet the age requirement and have the legal capacity to enter into these Terms."
+                ]
+            },
+            {
+                "title": "Account Registration and Security",
+                "content": [
+                    "To create and manage Link Boxes, you must register or sign in using a valid Google account.",
+                    "You are responsible for maintaining the confidentiality of your account login credentials and are fully responsible for all activities that occur under your account.",
+                    "You agree to provide accurate and complete information when registering and to update your information promptly if it changes.",
+                    "You must notify SkyMute immediately if you suspect any unauthorized use of your account."
+                ]
+            },
+            {
+                "title": "Link Box Feature",
+                "subsections": [
+                    {
+                        "title": "Description",
+                        "content": [
+                            "The Link Box allows you to create a collection of links with custom names, captions, and thumbnails (if added) that can be accessed via a unique 3-digit code.",
+                            "Users share this 3-digit code across various platforms to promote their links without directly posting URLs, helping to bypass restrictions or blocks on external links."
+                        ]
+                    },
+                    {
+                        "title": "User Responsibilities and Content Rules",
+                        "content": [
+                            "You are solely responsible for the content you upload, including links, captions, box names, and any metadata.",
+                            "Your content complies with all applicable laws and regulations.",
+                            "You own all rights or have obtained all necessary permissions to share the content.",
+                            "You do not upload or promote content that is illegal, harmful, fraudulent, threatening, abusive, harassing, defamatory, obscene, pornographic (except where permitted with proper NSFW labeling), violative of intellectual property, contains malware or scams, or promotes hate, violence, or terrorism."
+                        ]
+                    },
+                    {
+                        "title": "NSFW and Sexual Content Policy",
+                        "content": [
+                            "SkyMute allows sexually explicit or adult content only if the box is clearly labeled as NSFW and complies with age restrictions and laws.",
+                            "Users acknowledge that such content is publicly accessible via the code and take full responsibility."
+                        ]
+                    },
+                    {
+                        "title": "Moderation and Enforcement",
+                        "content": [
+                            "SkyMute reserves the right to monitor, review, and remove any content or Link Boxes that violate these Terms or applicable laws.",
+                            "Repeated or severe violations may result in suspension or termination of your account.",
+                            "SkyMute is not responsible for any user-generated content and disclaims liability for damages resulting from such content."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Intellectual Property Rights",
+                "content": [
+                    "You retain ownership of the content you upload.",
+                    "By uploading content, you grant SkyMute a non-exclusive, worldwide, royalty-free, sublicensable license to host, use, distribute, modify, run, copy, perform, display, translate, and create derivative works of your content to operate and promote the Services.",
+                    "You agree not to upload content that infringes on others’ intellectual property rights."
+                ]
+            },
+            {
+                "title": "User Conduct",
+                "content": [
+                    "You agree not to use the Services for unlawful purposes.",
+                    "Do not interfere with service security or functionality.",
+                    "Do not attempt unauthorized access to accounts or systems.",
+                    "Do not collect or store other users’ data without consent.",
+                    "Do not spam or flood the Services.",
+                    "Do not impersonate others or misrepresent yourself."
+                ]
+            },
+            {
+                "title": "Privacy and Data Protection",
+                "content": [
+                    "Your use of the Services is subject to SkyMute’s Privacy Policy.",
+                    "SkyMute does not index user content for public search engines.",
+                    "All content is only discoverable via the SkyMute app using the 3-digit code."
+                ]
+            },
+            {
+                "title": "Limitation of Liability",
+                "content": [
+                    "SkyMute provides the Services “as is” without warranties.",
+                    "No guarantees for uninterrupted or error-free service.",
+                    "Not liable for indirect, incidental, special, or consequential damages.",
+                    "Use the Services at your own risk."
+                ]
+            },
+            {
+                "title": "Indemnification",
+                "content": [
+                    "You agree to indemnify and hold harmless SkyMute, its affiliates, employees, and partners from any claims or damages arising from your content or use of the Services."
+                ]
+            },
+            {
+                "title": "Termination",
+                "content": [
+                    "SkyMute may suspend or terminate your account for violating these Terms or for any reason.",
+                    "Termination does not waive any rights or remedies available to SkyMute."
+                ]
+            },
+            {
+                "title": "Changes to Terms",
+                "content": [
+                    "SkyMute may modify these Terms at any time.",
+                    "Significant changes will be communicated via the app or email.",
+                    "Continued use of the Services implies acceptance of updated Terms."
+                ]
+            },
+            {
+                "title": "Governing Law and Dispute Resolution",
+                "content": [
+                    "These Terms are governed by the laws of Delhi, India.",
+                    "All disputes will be resolved exclusively in the courts located within Delhi, India."
+                ]
+            },
+            {
+                "title": "Video Selling Feature",
+                "content": [
+                    "Sellers must be at least 18 years old and have full rights to the content.",
+                    "Sexual or adult content is strictly prohibited in this feature.",
+                    "Content must be legal and accurate and comply with SkyMute policies.",
+                    "Buyers must use purchased content for personal, non-commercial purposes.",
+                    "SkyMute may charge fees on sales; refunds follow platform policy.",
+                    "SkyMute may remove content and suspend accounts for violations.",
+                    "SkyMute is not responsible for user disputes.",
+                    "Sellers and buyers indemnify SkyMute against any claims arising from their actions."
+                ]
+            }
+        ],
+        "acknowledgment": "By using SkyMute, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions."
+    }
+}
