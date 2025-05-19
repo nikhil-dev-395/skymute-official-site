@@ -1,84 +1,92 @@
-import terms from "../../json/terms.json";
-
-const TermsConditions = () => {
-  const data = terms.terms_and_conditions;
-
+import React from "react";
+import termsData from "../../json/terms.json"; // Make sure this JSON file has the structure you provided
+import ids from "../../json/idsTerms.json";
+const TermsAndConditions = () => {
   return (
-    <div className="mx-auto py-6 px-4 md:px-5 text-gray-200 max-w-[1100px]">
+    <div className="max-w-[1100px] mx-auto py-10 px-4 text-gray-200">
       <h1 className="md:text-[80px] text-[60px] font-extrabold text-white capitalize">
-        Terms and Conditions
+        {termsData.title}
       </h1>
+      <p className="text-xl font-sans font-bold text-white pt-4 pb-3">
+        Effective Date : {termsData.effectiveDate}
+      </p>
 
-      {/* Effective Date */}
-      {data?.effective_date && (
-        <p className="mb-6 text-sm text-gray-400">
-          <span className="font-medium text-gray-300">Effective Date:</span>{" "}
-          {data.effective_date}
-        </p>
-      )}
+      <p className=" text-gray-300 mb-10 font-semibold">{termsData.introduction}</p>
 
-      {/* Introduction */}
-      {data?.introduction && (
-        <p className="mb-10 text-gray-300">{data.introduction}</p>
-      )}
+      <div className=" pb-10">
+        <ul className="gap-4 flex flex-col">
+          {ids.map((id) => {
+            return (
+              <li className="" key={id.index}>
+                <span className="pr-4">{id.index}.</span>
+                <a href={`#${id.id}`} className="underline text-indigo-200">
+                  {id.idText}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
-      {/* Sections */}
-      {data?.sections?.map((section, idx) => (
-        <div key={idx} className="mb-10">
-          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">
+      {termsData.sections.map((section) => (
+        <div key={section.id} className="mb-12 border-b border-blue-200 pb-8">
+          <h2 className="text-2xl font-bold text-white mb-4" id={section.id}>
             {section.title}
           </h2>
 
-          {/* Content Paragraphs */}
-          {section.content && (
-            <div className="space-y-4 text-gray-300 leading-relaxed">
-              {section.content.map((para, index) => (
-                <p key={index}>
-                  {" "}
-                  <span className="font-extrabold pr-2">{index + 1}.</span>{" "}
-                  {para}
-                </p>
-              ))}
-            </div>
+          {section.description && (
+            <p className="text-gray-400 mb-4">{section.description}</p>
           )}
 
-          {/* Subsections */}
-          {section.subsections && (
-            <div className="mt-6 space-y-6">
-              {section.subsections.map((sub, subIdx) => (
-                <div key={subIdx} className="mb-4">
-                  <h3 className="text-lg font-semibold text-gray-100 mb-2">
-                    {sub.title}
-                  </h3>
-                  <ul className="list-disc ml-6 space-y-2 text-gray-300">
-                    {sub.content.map((item, itemIdx) => (
-                      <li key={itemIdx}>{item}</li>
+          {/* Points rendering */}
+          {section.points && (
+            <ul className="list-disc list-inside space-y-2 text-gray-300">
+              {section.points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* Subsections rendering */}
+          {section.subsections &&
+            section.subsections.map((sub) => (
+              <div key={sub.id} className="mt-6">
+                <h3
+                  className="text-xl font-semibold text-white mb-2"
+                  id={sub.id}
+                >
+                  {sub.title}
+                </h3>
+                {sub.points && (
+                  <ul className="list-disc list-inside space-y-2 text-gray-300">
+                    {sub.points.map((point, index) => (
+                      <li key={index}>{point}</li>
                     ))}
                   </ul>
-                </div>
-              ))}
-            </div>
+                )}
+              </div>
+            ))}
+
+          {/* Contact Information */}
+          {section.email && (
+            <p className="mt-4 text-gray-300">
+              Contact us at:{" "}
+              <a
+                href={`mailto:${section.email}`}
+                className="text-blue-400 underline"
+              >
+                {section.email}
+              </a>
+            </p>
           )}
         </div>
       ))}
 
-      {/* Acknowledgment */}
-      {data?.acknowledgment && (
-        <p className="mt-10 italic text-gray-400">{data.acknowledgment}</p>
-      )}
-
-      {/* contact */}
-      <div className="pt-9">
-        <h3>contact information</h3>
-        <p>
-          If you have questions, contact:{" "}
-          <a href="mailto:skymute@skymute.com" className="text-blue-500">
-            skymute@skymute.com
-          </a>
-        </p>
-      </div>
+      <p className="text-center text-gray-400 mt-12 italic">
+        {termsData.acknowledgment}
+      </p>
     </div>
   );
 };
 
-export default TermsConditions;
+export default TermsAndConditions;
