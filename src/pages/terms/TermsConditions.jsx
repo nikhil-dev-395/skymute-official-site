@@ -11,7 +11,9 @@ const TermsAndConditions = () => {
         Effective Date : {termsData.effectiveDate}
       </p>
 
-      <p className=" text-gray-300 mb-10 font-semibold">{termsData.introduction}</p>
+      <p className=" text-gray-300 mb-10 font-semibold">
+        {termsData.introduction}
+      </p>
 
       <div className=" pb-10">
         <ul className="gap-4 flex flex-col">
@@ -29,7 +31,7 @@ const TermsAndConditions = () => {
       </div>
 
       {termsData.sections.map((section) => (
-        <div key={section.id} className="mb-12 border-b border-blue-200 pb-8">
+        <div key={section.id} className="mb-12 border-b border-gray-700 pb-8">
           <h2 className="text-2xl font-bold text-white mb-4" id={section.id}>
             {section.title}
           </h2>

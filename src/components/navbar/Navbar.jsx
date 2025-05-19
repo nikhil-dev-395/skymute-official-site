@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full max-h-20 border-b border-white py-5 "
+      className="w-full max-h-20 border-b border-blue-200 py-5 "
       style={headerStyle}
     >
       <nav
@@ -57,7 +57,7 @@ const Navbar = () => {
       </nav>
       <>
         {!toggleMenu ? (
-          <ul className="bg-slate-900  flex flex-col absolute top-20 border-b text-white border-white  w-full h-[140px] pl-6 py-4 mb-2 gap-3.5 text-xl">
+          <ul className="bg-slate-900  flex flex-col absolute top-20 border-b text-white border-blue-400  w-full h-[140px] pl-6 py-4 mb-2 gap-3.5 text-xl">
             <li className="hover:text-blue-600">
               <Link to="/about">about</Link>
             </li>
