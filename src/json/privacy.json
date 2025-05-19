@@ -2,7 +2,7 @@
     "effectiveDate": "10/04/2025",
     "lastUpdated": "10/05/2025",
     "app": "SkyMute",
-    "summary": "SkyMute collects minimal personal data via Google login for link box creation and sharing. Users create public boxes accessible by 3-digit codes that may be indexed by search engines. Sexual content is allowed only when explicitly marked NSFW and age restrictions are followed. We do not sell user data and respect user rights to access and delete their content.",
+    "summary": "SkyMute collects minimal personal data via Google login for link box creation and sharing. Users create public boxes accessible by 3-digit codes that may be indexed by search engines. The app strictly prohibits adult content, with violations resulting in content removal and possible account actions. We do not sell user data and respect user rights to access and delete their content.",
     "sections": [
         {
             "id": "informationWeCollect",
@@ -29,7 +29,7 @@
                 "metadata": [
                     "Date and time of box creation",
                     "Number of links in a box",
-                    "3-digit short code"
+                    "System-generated 3-digit short code"
                 ],
                 "note": "We do not access your password or post on your behalf. You control the content within your boxes."
             },
@@ -48,15 +48,15 @@
             }
         },
         {
-            "id": "HowWeUseYourInformation",
+            "id": "howWeUseYourInformation",
             "title": "How We Use Your Information",
             "purposes": [
                 "To create and manage link boxes",
-                "To generate and associate short codes",
-                "To enable search-based content discovery",
+                "To generate and associate short codes for sharing",
+                "To allow users to discover content via codes",
                 "To provide customer support",
-                "To monitor abuse and enforce platform rules",
-                "To improve app performance and usability"
+                "To monitor abuse and enforce platform guidelines",
+                "To improve App functionality, usability, and performance"
             ],
             "dataSharing": {
                 "sellRentTrade": false,
@@ -64,56 +64,52 @@
             }
         },
         {
-            "id": "PublicContentAndSharing",
+            "id": "publicContentAndSharing",
             "title": "Public Content and Sharing",
-            "description": "Link boxes are public and shareable via 3-digit codes. These may be indexed by search engines.",
+            "description": "Each link box you create is intended for public sharing using a short 3-digit code. Anyone with this code can view your box content.",
+            "indexing": "Boxes may be indexed by public search engines (e.g., Google, Bing)",
+            "default": "All boxes are public",
+            "warning": "Do not include private or sensitive information in public boxes",
             "userControl": [
-                "Add, update, or remove links",
-                "Delete boxes (note: search engine caches may persist)"
+                "Add, update, or remove links at any time",
+                "Delete your box (may remove it from indexing, but cached versions may persist)"
             ],
-            "consent": "By using SkyMute and sharing boxes, you consent to public access and indexing."
+            "consent": "By sharing a box code, you consent to public visibility of that content."
         },
         {
-            "id": "ContentGuidelinesAndModeration",
+            "id": "contentGuidelinesAndModeration",
             "title": "Content Guidelines and Moderation",
-            "responsibility": "Users are responsible for content they share.",
-            "nsfwPolicy": {
-                "allowed": true,
-                "conditions": [
-                    "Clearly mark NSFW in box name or bio",
-                    "Comply with age restrictions",
-                    "Use filters or age-gates to restrict visibility"
-                ]
+            "responsibility": "All content on SkyMute is user-generated. We do not create or upload any content ourselves.",
+            "adultContentPolicy": {
+                "allowed": false,
+                "statement": "SkyMute does not allow sexual, adult, or explicit content of any kind. Content that violates this rule will be immediately removed, and the responsible account may be suspended or banned."
             },
             "prohibitedContent": [
+                "Adult or sexually explicit material",
                 "Hate speech, harassment, or threats",
-                "Scams, malware, or deceptive links",
-                "Copyright or trademark infringement",
-                "Illegal material",
-                "Violent content unsuitable for general audiences"
+                "Scam links, malware, or deceptive content",
+                "Infringement of copyright or trademark",
+                "Illegal or violent material"
             ],
-            "violations": [
-                "Content removal",
-                "Code invalidation",
-                "Account suspension"
-            ]
+            "reporting": "Users can report inappropriate content directly within the app. Reported content is reviewed, and violations will lead to content removal or account actions.",
+            "enforcement": "SkyMute reserves the right to block or remove any content or user that violates these policies or applicable laws."
         },
         {
-            "id": "DataSecurity",
+            "id": "dataSecurity",
             "title": "Data Security",
             "measures": [
-                "Data encrypted in transit (HTTPS)",
-                "Secure storage",
-                "Access control",
-                "Regular backups and audits"
+                "Data is encrypted in transit (HTTPS)",
+                "Access to systems is restricted",
+                "Regular backups and audits",
+                "Only essential data is stored"
             ],
-            "note": "While we strive for security, no system is 100% safe. Share responsibly."
+            "note": "While we work hard to ensure security, no system is completely safe. Please share responsibly."
         },
         {
-            "id": "ThirdPartyServices",
+            "id": "thirdPartyServices",
             "title": "Third-Party Services",
             "servicesUsed": [
-                "Google Sign-In"
+                "Google Sign-In (for authentication)"
             ],
             "dataSharing": {
                 "withThirdParties": false,
@@ -122,60 +118,51 @@
                     "User consent"
                 ]
             },
-            "note": "External links may lead to third-party sites not covered by our policy."
+            "note": "Some links may direct to external sites; we are not responsible for their practices."
         },
         {
-            "id": "YourRightsAndChoices",
+            "id": "yourRightsAndChoices",
             "title": "Your Rights and Choices",
             "rights": [
-                "Access your data",
+                "Access your personal data",
                 "Request correction or deletion",
-                "Withdraw consent",
-                "Delete your account",
-                "Lodge complaints with data protection authorities"
+                "Withdraw consent or delete your account",
+                "Contact authorities for data protection concerns"
             ],
-            "howToExercise": "Contact us at skymute@skymute.com or manage boxes in-app"
+            "howToExercise": "Contact us at skymute@skymute.com. You can also manage/delete boxes directly in the app."
         },
         {
-            "id": "ChildrenPrivacy",
-            "title": "Children’s Privacy",
-            "description": "Not intended for children under 13. We do not knowingly collect data from minors. Such data will be deleted upon discovery."
+            "id": "childrenPrivacy",
+            "title": "Children's Privacy",
+            "description": "SkyMute is not for children under 13 (or local minimum age). We do not knowingly collect personal data from minors. If discovered, such data will be deleted."
         },
         {
-            "id": "InternationalUsers",
+            "id": "internationalUsers",
             "title": "International Users",
-            "description": "By using SkyMute, you agree to data processing as described, regardless of your location."
+            "description": "By using SkyMute, you agree to your data being processed as per this Privacy Policy, regardless of where you're located."
         },
         {
-            "id": "PolicyUpdates",
+            "id": "policyUpdates",
             "title": "Policy Updates",
-            "description": "We may update this policy and notify users via the app. Continued use means acceptance of updates."
+            "description": "We may update this Privacy Policy. Major changes will be communicated via in-app notice. Continued use means acceptance of the updated terms."
         },
         {
-            "id": "VideoSellingFeature",
-            "title": "Video Selling Feature, Wallet, and Payment Information",
+            "id": "videoSellingFeature",
+            "title": "Video Selling, Wallet & Payment Information",
             "features": [
-                "In-app wallet for recharging",
-                "Secure payment processing via third parties",
-                "Use of wallet funds for video/course/product purchases"
+                "Recharge using secure payment methods",
+                "Use balance to buy videos, courses, or products"
             ],
-            "dataCollected": [
-                "Only what's necessary for payment",
-                "Transaction history (confidential)"
+            "importantNotes": [
+                "Payments are processed by trusted third parties",
+                "SkyMute does not store full payment info",
+                "Sales and transaction history are kept confidential",
+                "Users must not upload or sell illegal or banned content"
             ],
-            "security": "SkyMute does not store full payment details.",
-            "prohibitedUsage": [
-                "Selling illegal or infringing content",
-                "Violating content policies"
-            ],
-            "consequences": [
-                "Content removal",
-                "Account suspension",
-                "Legal compliance and reporting"
-            ]
+            "consequences": "Violations will result in immediate content removal and possible account bans. SkyMute is not responsible for user-generated content and complies with applicable laws for takedown and reporting."
         },
         {
-            "id": "ContactUs",
+            "id": "contactUs",
             "title": "Contact Us",
             "email": "skymute@skymute.com"
         }
